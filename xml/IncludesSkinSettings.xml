@@ -1056,6 +1056,19 @@
             <selected>Skin.HasSetting(DisableWelcomeMsg)</selected>
             <visible>String.IsEqual(Skin.String(HomeLayout),bingie)</visible>
         </control>
+        <control type="radiobutton" id="23029">
+            <include>SkinSettings_Button</include>
+            <label>Show seasonal snowflakes</label>
+            <onclick>Skin.ToggleSetting(enablesnow)</onclick>
+            <selected>Skin.HasSetting(enablesnow)</selected>
+        </control>
+        <control type="radiobutton" id="23030">
+	    <visible>Skin.HasSetting(enablesnow)</visible>
+            <include>SkinSettings_Button</include>
+            <label>Show seasonal snowflakes on all screens</label>
+            <onclick>Skin.ToggleSetting(expandsnow)</onclick>
+            <selected>Skin.HasSetting(expandsnow)</selected>
+        </control>
     </include>
 
 
